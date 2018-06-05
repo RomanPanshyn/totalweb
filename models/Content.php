@@ -9,6 +9,7 @@ use Yii;
  *
  * @property int $id
  * @property string $category
+ * @property string $selectedcategories
  * @property string $price
  * @property string $image
  * @property string $description
@@ -18,6 +19,7 @@ class Content extends \yii\db\ActiveRecord
     /**
      * {@inheritdoc}
      */
+
     public static function tableName()
     {
         return 'content';

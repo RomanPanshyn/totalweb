@@ -194,3 +194,14 @@ a.desc:after {
 .contentdisplay {
     display: inline-grid;
 }
+
+.shopitem {
+    width: 300px;
+    height: 350px;
+    max-width: 300px;
+    max-height: 350px;
+    margin: 5px;
+    border: dotted 1px grey;
+    display: grid;
+    overflow: hidden;
+}

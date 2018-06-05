@@ -1,12 +1,12 @@
 <?php
 
 use yii\helpers\Html;
+use yii\widgets\ListView;
 use yii\helpers\ArrayHelper;
 use yii\widgets\ActiveForm;
-use yii\grid\GridView;
 
 /* @var $this yii\web\View */
-/* @var $searchModel app\models\ContentSearch */
+/* @var $searchModel app\models\ShopSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = 'Total Web Интернет-магазин';
@@ -15,10 +15,7 @@ $this->params['breadcrumbs'][] = 'Услуги';
 <div class="content-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
-    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
-    <p>
-        <?= Html::a('Создать услугу', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
+    <?php //echo $this->render('_search', ['model' => $searchModel]); ?>
     <div class="row">
         <div class="col-lg-2 contentdisplay">
             Категория:
@@ -35,26 +32,14 @@ $this->params['breadcrumbs'][] = 'Услуги';
             <?php ActiveForm::end(); ?>
         </div>
         <div class="col-lg-10 contentdisplay">
-            <?= GridView::widget([
+            <?= ListView::widget([
                 'dataProvider' => $dataProvider,
-                'filterModel' => $searchModel,
-                'columns' => [
-                    ['class' => 'yii\grid\SerialColumn'],
-                    'id',
-                    'category',
-                    'price',
-                    [
-                        'attribute' => 'image',
-                        'format' => 'html',
-                        'value' => function($data) {
-                                return Html::img($data->imageurl, ['width' => '100']);
-                            },
-                    ],
-                    'description:ntext',
-
-                    ['class' => 'yii\grid\ActionColumn'],
-                ],
-            ]); ?>
+                'layout' => "{pager}\n{summary}\n{items}",                
+                'itemOptions' => ['class' => 'col-lg-1 shopitem'],
+                'itemView' => function ($model, $key, $index, $widget) {
+                    return $this->render('_list_item', ['model' => $model]);
+                },
+            ]) ?>
         </div>
     </div>
 </div>

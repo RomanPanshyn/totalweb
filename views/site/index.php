@@ -20,11 +20,17 @@ $this->title = 'Total Web Интернет-магазин';
             <h2 class="shop-name">TW Интернет Магазин</h2>
             <br><br><br><br>
             <p>
-                <?= Html::a('Обзор услуг', ['/content/index'],
+                <?= Html::a('Обзор услуг', ['/shop/index'],
                 ['class' => 'btn btn-lg btn-success',
                  'style' => ['padding' => '50px 50px', 'font-size' => '30px']]) ?>
             </p>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br>
+            <p>
+                <?= Html::a('Редактировать услуги', ['/content/index'],
+                ['class' => 'btn btn-lg btn-primary',
+                 'style' => ['padding' => '30px 30px', 'font-size' => '20px']]) ?>
+            </p>
+            <br><br><br><br><br><br><br>
         </div>
 
         <div class="row text-center why">

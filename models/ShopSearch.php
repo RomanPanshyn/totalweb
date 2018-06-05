@@ -9,9 +9,9 @@ use app\models\Content;
 use yii\data\Pagination;
 
 /**
- * ContentSearch represents the model behind the search form of `app\models\Content`.
+ * ShopSearch represents the model behind the search form of `app\models\Content`.
  */
-class ContentSearch extends Content
+class ShopSearch extends Content
 {
     /**
      * {@inheritdoc}
@@ -41,23 +41,23 @@ class ContentSearch extends Content
      * @return ActiveDataProvider
      */
 
-    public function searchcategory()
-    {
-         $categories = Content::find()->select('category')->distinct()->all();
+     public function searchcategory()
+     {
+          $categories = Content::find()->select('category')->distinct()->all();
 
-         $categ = [];
-         $i = 0;
-         if ($categories)
-         {
-             foreach ($categories as $row)
-             {
-                 $categ[] = ['id' => $i, 'name' => $row['category']];
-                 $i++;
-             }
-         }
+          $categ = [];
+          $i = 0;
+          if ($categories)
+          {
+              foreach ($categories as $row)
+              {
+                  $categ[] = ['id' => $i, 'name' => $row['category']];
+                  $i++;
+              }
+          }
 
-         return $categ;
-    }    
+          return $categ;
+     }
 
     public function search($params, $categories)
     {
@@ -66,6 +66,7 @@ class ContentSearch extends Content
                 ]);
 
         // add conditions that should always apply here
+
         $pagination = new Pagination(['pageSize' => 10]);
         $dataProvider = new ActiveDataProvider([
             'query' => $query,

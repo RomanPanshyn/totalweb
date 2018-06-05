@@ -4,17 +4,16 @@ namespace app\controllers;
 
 use Yii;
 use app\models\Content;
-use app\models\ContentSearch;
-use app\models\Categories;
-use yii\helpers\ArrayHelper;
+use app\models\ShopSearch;
+use app\models\Shopcateg;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * ContentController implements the CRUD actions for Content model.
+ * ShopController implements the CRUD actions for Content model.
  */
-class ContentController extends Controller
+class ShopController extends Controller
 {
     /**
      * {@inheritdoc}
@@ -37,8 +36,8 @@ class ContentController extends Controller
      */
     public function actionIndex()
     {
-        $searchModel = new ContentSearch();
-        $categModel = Categories::findOne(['id' => 1]);
+        $searchModel = new ShopSearch();
+        $categModel = Shopcateg::findOne(['id' => 1]);
         $categModel->load(Yii::$app->request->post());
         $categModel->save();
         $categories;
@@ -69,58 +68,6 @@ class ContentController extends Controller
         return $this->render('view', [
             'model' => $this->findModel($id),
         ]);
-    }
-
-    /**
-     * Creates a new Content model.
-     * If creation is successful, the browser will be redirected to the 'view' page.
-     * @return mixed
-     */
-    public function actionCreate()
-    {
-        $model = new Content();
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
-        }
-
-        return $this->render('create', [
-            'model' => $model,
-        ]);
-    }
-
-    /**
-     * Updates an existing Content model.
-     * If update is successful, the browser will be redirected to the 'view' page.
-     * @param integer $id
-     * @return mixed
-     * @throws NotFoundHttpException if the model cannot be found
-     */
-    public function actionUpdate($id)
-    {
-        $model = $this->findModel($id);
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
-        }
-
-        return $this->render('update', [
-            'model' => $model,
-        ]);
-    }
-
-    /**
-     * Deletes an existing Content model.
-     * If deletion is successful, the browser will be redirected to the 'index' page.
-     * @param integer $id
-     * @return mixed
-     * @throws NotFoundHttpException if the model cannot be found
-     */
-    public function actionDelete($id)
-    {
-        $this->findModel($id)->delete();
-
-        return $this->redirect(['index']);
     }
 
     /**
