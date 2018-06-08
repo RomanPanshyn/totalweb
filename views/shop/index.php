@@ -10,14 +10,13 @@ use yii\widgets\ActiveForm;
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = 'Total Web Интернет-магазин';
-$this->params['breadcrumbs'][] = 'Услуги';
 ?>
-<div class="content-index">
+<div class="shop-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
     <?php //echo $this->render('_search', ['model' => $searchModel]); ?>
     <div class="row">
-        <div class="col-lg-2 contentdisplay">
+        <div class="col-lg-2 col-md-2 col-sm-2 contentdisplay">
             Категория:
             <?= Html::checkboxList('Категории', null, ArrayHelper::map($categoriesall, 'name', 'name'),
             ['class' => 'categorycheckboxlist']) ?>
@@ -31,11 +30,10 @@ $this->params['breadcrumbs'][] = 'Услуги';
                 </div>
             <?php ActiveForm::end(); ?>
         </div>
-        <div class="col-lg-10 contentdisplay">
+        <div class="col-lg-10 col-md-10 col-sm-10 contentdisplay">
             <?= ListView::widget([
                 'dataProvider' => $dataProvider,
-                'layout' => "{pager}\n{summary}\n{items}",                
-                'itemOptions' => ['class' => 'col-lg-1 shopitem'],
+                'layout' => "{pager}\n{summary}\n{items}",
                 'itemView' => function ($model, $key, $index, $widget) {
                     return $this->render('_list_item', ['model' => $model]);
                 },

@@ -10,10 +10,14 @@ $this->title = $model->id;
 $this->params['breadcrumbs'][] = ['label' => 'Услуги', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="content-view">
+<div class="shop-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
-
+    <p>
+        <?= Html::a('Купить', ['/shop/index'],
+        ['class' => 'btn btn-lg btn-success',
+         'style' => ['padding' => '20px 20px', 'font-size' => '25px']]) ?>
+    </p>
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [

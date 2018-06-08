@@ -6,6 +6,7 @@ use Yii;
 use app\models\Content;
 use app\models\ShopSearch;
 use app\models\Shopcateg;
+use app\models\Cart;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -54,6 +55,14 @@ class ShopController extends Controller
             'dataProvider' => $dataProvider,
             'categoriesall' => $categoriesall,
             'categories' => $categories,
+        ]);
+    }
+
+    public function actionCart()
+    {
+        $model = new Cart();
+        return $this->render('cart', [
+            'model' => $model,
         ]);
     }
 

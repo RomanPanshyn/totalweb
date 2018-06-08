@@ -29,18 +29,33 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => Yii::$app->name,
+        'brandLabel' => Html::img('@web/images/logowhite.png', ['alt'=>Yii::$app->name, 'style' => ['width' => '180px']]),
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar-inverse navbar-fixed-top',
+            'class' => 'navbar-inverse navbar-fixed-left',
         ],
     ]);
+    ?>
+    <br><br><br><br><br><br><br><br>
+    <?php
     echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
+        'options' => ['class' => 'navbar-nav'],
         'items' => [
             ['label' => 'Главная', 'url' => ['/site/index']],
-            ['label' => 'О нас', 'url' => ['/site/about']],
+            ['label' => 'Корзина', 'url' => ['/shop/cart']],
+            ['label' => 'О компании', 'url' => ['/site/aboutus']],
+            ['label' => 'О команде', 'url' => ['/site/aboutteam']],
+            ['label' => 'Услуги', 'url' => ['/shop/index']],
+            ['label' => 'Админка', 'url' => ['/content/index']],
             ['label' => 'Контакты', 'url' => ['/site/contact']],
+            ['label' => 'Блог', 'url' => ['/site/blog']],
+            ['label' => 'Предложения', 'url' => ['/site/offers']],
+            ['label' => 'О клиентах', 'url' => ['/site/clients']],
+            ['label' => 'Отзывы', 'url' => ['/site/reviews']],
+            ['label' => 'Вакансии', 'url' => ['/site/vacancies']],
+            ['label' => 'FAQ', 'url' => ['/site/faq']],
+            ['label' => 'Оплатить', 'url' => ('https://send.monobank.com.ua/341DzrZXw'),
+                'linkOptions' => ['target' => '_blank']],
             Yii::$app->user->isGuest ? (
                 ['label' => 'Войти', 'url' => ['/site/login']]
             ) : (
@@ -54,6 +69,7 @@ AppAsset::register($this);
                 . '</li>'
             )
         ],
+        'options' => ['class' =>'nav-pills'],
     ]);
     NavBar::end();
     ?>

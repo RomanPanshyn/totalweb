@@ -9,7 +9,6 @@ use yii\bootstrap\ActiveForm;
 use yii\captcha\Captcha;
 
 $this->title = 'Total Web Контакты';
-$this->params['breadcrumbs'][] = 'Контакты';
 ?>
 <div class="site-contact">
     <h1><?= Html::encode($this->title) ?></h1>

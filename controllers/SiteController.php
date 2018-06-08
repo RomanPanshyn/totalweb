@@ -121,8 +121,43 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionAbout()
+    public function actionAboutus()
     {
-        return $this->render('about');
+        return $this->render('aboutus');
+    }
+
+    public function actionAboutteam()
+    {
+        return $this->render('aboutteam');
+    }
+
+    public function actionOffers()
+    {
+        return $this->render('offers');
+    }
+
+    public function actionClients()
+    {
+        return $this->render('clients');
+    }
+
+    public function actionBlog()
+    {
+        return $this->render('blog');
+    }
+
+    public function actionReviews()
+    {
+        return $this->render('reviews');
+    }
+
+    public function actionVacancies()
+    {
+        return $this->render('vacancies');
+    }
+
+    public function actionFaq()
+    {
+        return $this->render('faq');
     }
 }

@@ -10,7 +10,6 @@ use yii\grid\GridView;
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = 'Total Web Интернет-магазин';
-$this->params['breadcrumbs'][] = 'Услуги';
 ?>
 <div class="content-index">
 
@@ -20,7 +19,7 @@ $this->params['breadcrumbs'][] = 'Услуги';
         <?= Html::a('Создать услугу', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
     <div class="row">
-        <div class="col-lg-2 contentdisplay">
+        <div class="col-lg-2 col-md-2 col-sm-2 contentdisplay">
             Категория:
             <?= Html::checkboxList('Категории', null, ArrayHelper::map($categoriesall, 'name', 'name'),
             ['class' => 'categorycheckboxlist']) ?>
@@ -34,7 +33,7 @@ $this->params['breadcrumbs'][] = 'Услуги';
                 </div>
             <?php ActiveForm::end(); ?>
         </div>
-        <div class="col-lg-10 contentdisplay">
+        <div class="col-lg-10 col-md-10 col-sm-10 contentdisplay">
             <?= GridView::widget([
                 'dataProvider' => $dataProvider,
                 'filterModel' => $searchModel,
