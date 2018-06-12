@@ -1,11 +1,14 @@
 $(document).ready(function(){
-    var selcat = $("#selectedcategories").val().split(',');
-    $('.categorycheckboxlist input:checkbox').each(function() {
-        if ($.inArray(this.value, selcat) != -1)
-        {
-            $(this).attr('checked', true);
-        }
-    });
+
+    if ($("#selectedcategories").length > 0) {
+        var selcat = $("#selectedcategories").val().split(',');
+        $('.categorycheckboxlist input:checkbox').each(function() {
+            if ($.inArray(this.value, selcat) != -1)
+            {
+                $(this).attr('checked', true);
+            }
+        });
+    }
 
     $(".categorycheckboxlist").change(function(){
         var categories = [];

@@ -10,6 +10,7 @@ use yii\grid\GridView;
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = 'Total Web Интернет-магазин';
+$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="content-index">
 
@@ -40,13 +41,14 @@ $this->title = 'Total Web Интернет-магазин';
                 'columns' => [
                     ['class' => 'yii\grid\SerialColumn'],
                     'id',
+                    'name',
                     'category',
                     'price',
                     [
                         'attribute' => 'image',
                         'format' => 'html',
                         'value' => function($data) {
-                                return Html::img($data->imageurl, ['width' => '100']);
+                                return Html::img($data->imageurl, ['height' => '80']);
                             },
                     ],
                     'description:ntext',

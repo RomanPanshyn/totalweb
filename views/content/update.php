@@ -7,7 +7,7 @@ use yii\helpers\Html;
 
 $this->title = 'Редактировать услугу: ' . $model->id;
 $this->params['breadcrumbs'][] = ['label' => 'Услуги', 'url' => ['index']];
-$this->params['breadcrumbs'][] = ['label' => $model->id, 'url' => ['view', 'id' => $model->id]];
+$this->params['breadcrumbs'][] = ['label' => $model->name, 'url' => ['view', 'id' => $model->id]];
 $this->params['breadcrumbs'][] = 'Редактировать';
 ?>
 <div class="content-update">

@@ -10,6 +10,7 @@ use yii\widgets\ActiveForm;
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = 'Total Web Интернет-магазин';
+$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="shop-index">
 

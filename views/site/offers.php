@@ -4,7 +4,8 @@
 
 use yii\helpers\Html;
 
-$this->title = 'Total Web Предложения';
+$this->title = 'Total Web Магазин';
+$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-offers">
     <h1><?= Html::encode($this->title) ?></h1>

@@ -4,7 +4,8 @@
 
 use yii\helpers\Html;
 
-$this->title = 'Total Web О клиентах';
+$this->title = 'Total Web Клиенты';
+$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-clients">
     <h1><?= Html::encode($this->title) ?></h1>
@@ -31,7 +32,7 @@ $this->title = 'Total Web О клиентах';
                 <div class="item active">
                     <div class="col-xs-12 box-bg">
                         <a href="http://www.esco.net.ua/" target="_blank">
-                            <img src="images/carousel01.jpg" alt="ESCO" width="460" height="345">
+                            <img src="images/carousel01s.jpg" alt="ESCO" height="345">
                         </a>
                         <div class="carousel-caption">
                             <h3>ESCO</h3>
@@ -43,7 +44,7 @@ $this->title = 'Total Web О клиентах';
                 <div class="item">
                     <div class="col-xs-12 box-bg">
                           <a href="http://5th.kiev.ua/" target="_blank">
-                              <img src="images/carousel02.jpg" alt="5TH AVE RESIDENCE" width="460" height="345">
+                              <img src="images/carousel02s.jpg" alt="5TH AVE RESIDENCE" height="345">
                           </a>
                           <div class="carousel-caption">
                             <h3>5TH AVE RESIDENCE</h3>
@@ -55,7 +56,7 @@ $this->title = 'Total Web О клиентах';
                 <div class="item">
                     <div class="col-xs-12 box-bg">
                           <a href="https://securityevolution.com.ua/" target="_blank">
-                              <img src="images/carousel03.jpg" alt="Охранные системы" width="460" height="345">
+                              <img src="images/carousel03.jpg" alt="Охранные системы" height="345">
                           </a>
                           <div class="carousel-caption">
                             <h3>Охранные системы</h3>
@@ -67,7 +68,7 @@ $this->title = 'Total Web О клиентах';
                 <div class="item">
                     <div class="col-xs-12 box-bg">
                           <a href="https://novipro.com.ua/ru/" target="_blank">
-                              <img src="images/carousel04.jpg" alt="Интернет магазин" width="460" height="345">
+                              <img src="images/carousel04.jpg" alt="Интернет магазин" height="345">
                           </a>
                           <div class="carousel-caption">
                             <h3>Интернет магазин</h3>
@@ -79,7 +80,7 @@ $this->title = 'Total Web О клиентах';
                 <div class="item">
                     <div class="col-xs-12 box-bg">
                           <a href="http://g50ua.com/" target="_blank">
-                              <img src="images/carousel05.jpg" alt="Data Center" width="460" height="345">
+                              <img src="images/carousel05s.jpg" alt="Data Center" height="345">
                           </a>
                           <div class="carousel-caption">
                             <h3>Data Center</h3>

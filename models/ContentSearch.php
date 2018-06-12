@@ -20,7 +20,7 @@ class ContentSearch extends Content
     {
         return [
             [['id'], 'integer'],
-            [['category', 'price', 'image', 'description'], 'safe'],
+            [['name', 'category', 'price', 'image', 'description'], 'safe'],
         ];
     }
 
@@ -57,7 +57,7 @@ class ContentSearch extends Content
          }
 
          return $categ;
-    }    
+    }
 
     public function search($params, $categories)
     {
@@ -85,7 +85,8 @@ class ContentSearch extends Content
             'id' => $this->id,
         ]);
 
-        $query->andFilterWhere(['like', 'category', $this->category])
+        $query->andFilterWhere(['like', 'name', $this->name])
+            ->andFilterWhere(['like', 'category', $this->category])
             ->andFilterWhere(['like', 'price', $this->price])
             ->andFilterWhere(['like', 'image', $this->image])
             ->andFilterWhere(['like', 'description', $this->description]);

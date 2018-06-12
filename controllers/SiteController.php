@@ -121,14 +121,14 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionAboutus()
+    public function actionCompany()
     {
-        return $this->render('aboutus');
+        return $this->render('company');
     }
 
-    public function actionAboutteam()
+    public function actionTeam()
     {
-        return $this->render('aboutteam');
+        return $this->render('team');
     }
 
     public function actionOffers()
@@ -159,5 +159,10 @@ class SiteController extends Controller
     public function actionFaq()
     {
         return $this->render('faq');
+    }
+
+    public function actionDepartments()
+    {
+        return $this->render('departments');
     }
 }

@@ -118,30 +118,71 @@ a.desc:after {
     outline: none;
 }
 
-.navbar-fixed-left {
-  width: 200px;
-  position: absolute;
-  border-radius: 0;
-  height: 800px;
+.navbar-fixed-top {
+    margin-left: 130px;
 }
 
-.navbar-fixed-left + .container {
-  padding-top: 0px;
-  padding-left: 220px;
-  /*position: absolute;*/
+/*@media only screen and (orientation: landscape) and (min-width:1280px) {*/
+
+    .navbar-fixed-left {
+       width: 130px;
+       position: absolute;
+       border-radius: 0;
+       height: auto;
+   }
+
+    .navbar-fixed-left + .container {
+       /*padding-top: 0px;*/
+       padding-left: 145px;
+       /*position: absolute;*/
+    }
+/*}*/
+
+.menu-hr1 {
+    color: white;
+    width: 115px;
+    margin-left: -15px;
+    margin-bottom: -10px;
+}
+
+.menu-hr2 {
+    color: white;
+    width: 115px;
+    margin-left: -15px;
+    margin-top: -10px;
+}
+
+.menu-hr3 {
+    color: white;
+    width: 115px;
+    margin-left: -15px;
+    margin-top: -10px;
 }
 
 .site-index {
     background-image: url('../images/bgimage.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 800px;
+    height: 1100px;
 }
 
-.shop-name {
-    background-color: white;
-    width: 30%;
+.site-index-text {
     margin: auto;
+}
+
+.logo1 {
+    background-color: white;
+    font-size: 25px;
+}
+
+.logo2 {
+    background-color: white;
+    font-size: 25px
+}
+
+.logo3 {
+    background-color: white;
+    font-size: 25px
 }
 
 .why {
@@ -211,11 +252,20 @@ a.desc:after {
 
 .shopitem {
     width: 250px;
-    height: 370px;
+    height: 350px;
     max-width: 250px;
-    max-height: 370px;
+    max-height: 350px;
     margin: 5px;
     border: dotted 1px grey;
     display: grid;
     overflow: hidden;
+}
+
+.price {
+    background-color: #fff3b5;
+    font-size: 20px;
+}
+
+.departments {
+    margin-top: 50px;
 }

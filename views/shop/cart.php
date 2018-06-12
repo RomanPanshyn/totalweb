@@ -15,6 +15,7 @@ use yii\widgets\ActiveForm;
  * @property string $email
  */
 $this->title = 'Total Web Корзина';
+$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="shop-cart">
 
