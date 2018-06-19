@@ -161,8 +161,4 @@ class SiteController extends Controller
         return $this->render('faq');
     }
 
-    public function actionDepartments()
-    {
-        return $this->render('departments');
-    }
 }

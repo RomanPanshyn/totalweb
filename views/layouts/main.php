@@ -61,7 +61,7 @@ AppAsset::register($this);
               'margin-top' => '-15px',
               'margin-bottom' => '-5px',
              ]
-         ]), 'url' => ['/site/departments']],
+         ]), 'url' => ['/site/index']],
          ],
          'encodeLabels' => false,
      ]);
@@ -90,10 +90,10 @@ AppAsset::register($this);
             ],
             ['label' => 'Агенство', 'url' => ['/site/company']],
             ['label' => 'Команда', 'url' => ['/site/team']],
-            ['label' => 'Услуги', 'url' => ['/shop/index']],
+            ['label' => 'Услуги', 'url' => ['/site/offers']],
             ['label' => 'Клиенты', 'url' => ['/site/clients']],
             ['label' => 'Отзывы', 'url' => ['/site/reviews']],
-            ['label' => 'Магазин', 'url' => ['/site/offers']],
+            ['label' => 'Магазин', 'url' => ['/shop/index']],
             ['label' => 'Контакты', 'url' => ['/site/contact']],
             ['label' => 'Вакансии', 'url' => ['/site/vacancies']],
             ['label' => 'Блог', 'url' => ['/site/blog']],

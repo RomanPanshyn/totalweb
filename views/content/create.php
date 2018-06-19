@@ -7,7 +7,7 @@ use yii\helpers\Html;
 /* @var $model app\models\Content */
 
 $this->title = 'Создать услугу';
-$this->params['breadcrumbs'][] = ['label' => 'Услуги', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => 'Админка', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="content-create">

@@ -1,21 +1,90 @@
 <?php
 
 /* @var $this yii\web\View */
+use yii\helpers\Html;
 
 $this->title = 'Total Web Интернет-магазин';
 ?>
 <div class="site-index">
-
-    <div class="jumbotron">
-        <img src="images/logo.png" alt="TotalWeb бренд качества твоего бизнеса">
-        <h2>TW бренд качества твоего бизнеса!</h2>
+    <div class="text-center">
+        <h1><?= Html::encode($this->title) ?></h1>
+        <h2>Total Web Отделы</h2>
     </div>
-
-    <div class="body-content">
-        <div class="row text-center site-index-text">
-            <p><span class="logo1">Создай свой бренд бизнес качества. Делай свой бренд с качеством подачи.</span></p>
-            <p><span class="logo2">Total Web - Генератор потока Ваших клиентов. Гарант качества бизнес услуг.</span></p>
-            <p><span class="logo3">Твой выбор это Total Web. Наш выбор это качество.</span></p>
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-4 departments">
+            <?= Html::a('Отдел PR', ['/departments/pr'],
+             ['class' => 'btn btn-lg btn-info',
+              'style' => ['padding' => '10px 10px', 'font-size' => '18px']]) ?>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 departments">
+            <?= Html::a('Отдел Медиа', ['/departments/media'],
+             ['class' => 'btn btn-lg btn-info',
+              'style' => ['padding' => '10px 10px', 'font-size' => '18px']]) ?>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 departments">
+            <?= Html::a('Отдел Копирайтера', ['/departments/copyright'],
+             ['class' => 'btn btn-lg btn-info',
+              'style' => ['padding' => '10px 10px', 'font-size' => '18px']]) ?>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 departments">
+            <?= Html::a('Отдел Продвижения', ['/departments/promotion'],
+             ['class' => 'btn btn-lg btn-info',
+              'style' => ['padding' => '10px 10px', 'font-size' => '18px']]) ?>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 departments">
+            <?= Html::a('Отдел Маркетинг', ['/departments/marketing'],
+             ['class' => 'btn btn-lg btn-info',
+              'style' => ['padding' => '10px 10px', 'font-size' => '18px']]) ?>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 departments">
+            <?= Html::a('Отдел Продаж', ['/departments/sales'],
+             ['class' => 'btn btn-lg btn-info',
+              'style' => ['padding' => '10px 10px', 'font-size' => '18px']]) ?>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 departments">
+            <?= Html::a('Отдел HR', ['/departments/hr'],
+             ['class' => 'btn btn-lg btn-info',
+              'style' => ['padding' => '10px 10px', 'font-size' => '18px']]) ?>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 departments">
+            <?= Html::a('Отдел Бухгалтерии', ['/departments/accounting'],
+             ['class' => 'btn btn-lg btn-info',
+              'style' => ['padding' => '10px 10px', 'font-size' => '18px']]) ?>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 departments">
+            <?= Html::a('Отдел Юридический', ['/departments/law'],
+             ['class' => 'btn btn-lg btn-info',
+              'style' => ['padding' => '10px 10px', 'font-size' => '18px']]) ?>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 departments">
+            <?= Html::a('Отдел Разработки', ['/departments/development'],
+             ['class' => 'btn btn-lg btn-info',
+              'style' => ['padding' => '10px 10px', 'font-size' => '18px']]) ?>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 departments">
+            <?= Html::a('Отдел Аналитический: масштабирования и стратегического развития', ['/departments/analytic'],
+             ['class' => 'btn btn-lg btn-info',
+              'style' => ['padding' => '10px 10px', 'font-size' => '18px']]) ?>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 departments">
+            <?= Html::a('Отдел Инфраструктуры', ['/departments/infrastructure'],
+             ['class' => 'btn btn-lg btn-info',
+              'style' => ['padding' => '10px 10px', 'font-size' => '18px']]) ?>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 departments">
+            <?= Html::a('Отдел Коуч', ['/departments/coach'],
+             ['class' => 'btn btn-lg btn-info',
+              'style' => ['padding' => '10px 10px', 'font-size' => '18px']]) ?>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 departments">
+            <?= Html::a('Отдел Партнёрства', ['/departments/partnership'],
+             ['class' => 'btn btn-lg btn-info',
+              'style' => ['padding' => '10px 10px', 'font-size' => '18px']]) ?>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 departments">
+            <?= Html::a('Отдел Монетизации', ['/departments/monetization'],
+             ['class' => 'btn btn-lg btn-info',
+              'style' => ['padding' => '10px 10px', 'font-size' => '18px']]) ?>
         </div>
     </div>
 </div>

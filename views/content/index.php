@@ -9,7 +9,7 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\ContentSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Total Web Интернет-магазин';
+$this->title = 'Total Web Админка';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="content-index">

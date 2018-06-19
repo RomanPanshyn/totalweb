@@ -7,7 +7,7 @@ use yii\helpers\Html;
 $this->title = 'Total Web Команда';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="site-aboutteam">
+<div class="site-team">
     <h1><?= Html::encode($this->title) ?></h1>
     <div class="row text-center steps">
         <br><br><br><br>
@@ -26,22 +26,22 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>
     <div class="row text-center steps">
         <div class="col-lg-3 col-md-3 col-sm-3">
-            <img src="images/05.png" alt="АНАЛИЗ ЗАДАЧ ПРОЕКТА">
+            <img src="images/05b.png" alt="АНАЛИЗ ЗАДАЧ ПРОЕКТА">
             <br>
             <h4>АНАЛИЗ ЗАДАЧ ПРОЕКТА</h4>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3">
-            <img src="images/06.png" alt="ЗАКЛЮЧАЕМ ДОГОВОР">
+            <img src="images/06b.png" alt="ЗАКЛЮЧАЕМ ДОГОВОР">
             <br>
             <h4>ЗАКЛЮЧАЕМ ДОГОВОР</h4>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3">
-            <img src="images/07.png" alt="РАЗРАБОТКА И ТЕСТИРОВАНИЕ">
+            <img src="images/07b.png" alt="РАЗРАБОТКА И ТЕСТИРОВАНИЕ">
             <br>
             <h4>РАЗРАБОТКА И ТЕСТИРОВАНИЕ</h4>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3">
-            <img src="images/08.png" alt="ГОТОВЫЙ ПРОДУКТ">
+            <img src="images/08b.png" alt="ГОТОВЫЙ ПРОДУКТ">
             <br>
             <h4>ГОТОВЫЙ ПРОДУКТ</h4>
             <br><br>

@@ -160,44 +160,56 @@ a.desc:after {
 }
 
 .site-index {
-    background-image: url('../images/bgimage.jpg');
+    /*background-image: url('../images/bgimage.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 1100px;
+    height: 1100px;*/
 }
 
 .site-index-text {
+    /*margin: auto;*/
+}
+
+.site-company {
+    /*background-image: url('../images/bgimage.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 1100px;*/
+}
+
+.site-company-text {
     margin: auto;
 }
 
 .logo1 {
-    background-color: white;
+    /*background-color: white;*/
     font-size: 25px;
 }
 
 .logo2 {
-    background-color: white;
+    /*background-color: white;*/
     font-size: 25px
 }
 
 .logo3 {
-    background-color: white;
+    /*background-color: white;*/
     font-size: 25px
 }
 
 .why {
-    background-color: #0e2a3f;
+    /* background-color: #0e2a3f; */
 }
 
 .why-header {
-    width: 40%;
+    /* width: 40%; */
+    text-align: center;
     margin: auto;
-    color: #ff6e2d;
+    color: black;
 }
 
 .why-text {
     text-align: justify;
-    color: white;
+    color: black;
     padding: 20px;
 }
 
@@ -218,18 +230,20 @@ a.desc:after {
 }
 
 .steps {
-    background-color: #e99453;
-    color: white;
+    /* background-color: #e99453; */
+    color: black;
 }
 
 .steps-header {
-    width: 70%;
-    margin: auto;
+    /* width: 70%; */
+    text-align: center;
+    /* margin: auto; */
 }
 
 .steps-text {
-    width: 70%;
-    margin: auto;
+    /* width: 70%; */
+    text-align: center;
+    /* margin: auto; */
 }
 
 .clients {
